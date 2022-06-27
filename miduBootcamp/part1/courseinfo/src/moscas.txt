@@ -1,0 +1,34 @@
+const App = () => {
+  const course = 'Half Stack application development @Samuel'
+
+  //Creamos objetos i los ponemos dentro de un array
+  const parts =[ 
+    {
+    name: 'Fundamentals of React',
+    exercises: 10
+    },
+    {
+      name: 'Using props to pass data',
+      exersises: 7
+    },
+    {
+    name: 'State of a component',
+    exersises: 14
+    }
+  ]
+  return (
+    <div>
+      <Header course={course} />
+      <p>
+        <Content content={part1} />
+      </p>
+      <p>
+        <Content content={part2} />
+      </p>
+      <p>
+        <Content content={part3} />
+      </p>
+      <p>Number of exercises <Total total={exercises1+ exercises2 + exercises3} /></p>
+    </div>
+  )
+}
